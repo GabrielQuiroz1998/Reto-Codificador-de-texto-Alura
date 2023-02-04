@@ -1,0 +1,444 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    /*background: url(img/fondo.png.jpg);*/
+}
+header{
+    color: white;
+    margin: 0;
+    padding: 5px;  
+}
+.vector{
+    position: absolute;
+    margin: 0;
+    left: 5%;
+    top: 20px;
+    bottom: 0%;
+}
+main{
+    margin: 0;
+    width: 100%;
+}
+.textarea{
+    position: absolute;
+    top: 100px;
+    left: 12%;
+    height: 680px;
+    width: 58%;
+    background-color: whitesmoke;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+}
+.textarea::placeholder{
+    color: #0A3871;
+}
+.div-texto-boton-copiar{
+    display: none;
+}
+.mostrar-mensaje{
+    display: none;
+}
+
+section{
+    position: absolute;
+    top: 20px;
+    left: 75%;
+    margin: 0;
+    height: 845px;
+    width: 20%;
+    background-color: white;
+    border-radius: 24px;
+    border-radius: 24px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+	border-bottom: 2px solid;
+    border-color: #0A3871;
+}
+#munieco{
+    position: relative;
+    top: 80px;
+    background-color: white;
+    width: 100%;
+    height: 300px;
+}
+#texto-error{
+    color:#343A40;
+    position: relative;
+    top: 80px;
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#p-error{
+    color: #495057;
+    position: relative;
+    top: 70px;
+    text-align: center;
+    font-size: 17px;
+
+}
+.mensaje{
+    position: absolute;
+    top: 790px;
+    left: 12%;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.botones{
+    height: 46px;
+    width: 26%;
+    background-color: #0c8cd3;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    border-radius: 24px;
+    border: 0;
+	border-bottom: 3px solid;
+    border-color: #04324c; 
+}
+.botones:hover{
+    background-color: orange;
+}
+#boton-uno{
+    position: absolute;
+    top: 820px;
+    left: 12%;
+}
+#boton-dos{
+    position: absolute;
+    top: 820px;
+    left: 43%;
+}
+
+#bto-copiar{
+    display: none;
+}
+.div-nuevo{
+    position: absolute;
+    left: 100px;
+    background-color: red;
+    height: 500px; 
+    width: 1000px
+}
+.div-texto-boton-copia-nuevo{
+    position: absolute;
+    top: 20px;
+    left: 75%;
+    margin: 0;
+    height: 845px;
+    width: 20%;
+    background-color: white;
+    border-radius: 24px;
+    border-radius: 24px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+	border-bottom: 2px solid;
+    border-color: #0A3871;
+}
+
+.poner-invisible-div{
+    display: none;
+}
+
+.textarea-nuevo{
+    position: relative;
+    top: 60px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 500px;
+    background-color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    margin: auto;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.boton-copiar-nuevo{
+    position: relative;
+    top: 285px;
+    height: 46px;
+    left: 4%;
+    right: 4%;
+    width: 90%;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: #0c8cd3;
+    border-radius: 24px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+	border-bottom: 2px solid;
+    border-color: #0c8cdc;
+}
+.boton-copiar-nuevo:hover{
+    background-color: orange;
+    border-color: white;
+    color: white;
+}
+footer{
+    position: absolute;
+    top: 890px;
+    /*bottom: 0px;*/
+    width: 100%;
+    height: 80px;
+    background-color: #0A3871;
+    color: white;
+}
+footer > h3{
+    position: absolute;
+    bottom: 5px;
+    left: 41%;
+}
+.logo-git{
+    position: absolute;
+    bottom: 10px;
+    left: 37.5%;
+    margin: 0;
+    width: 48px;
+    height: 50px;
+    background-color: #0A3871;
+}
+@media(max-width: 420px){
+    .textarea{
+        position: absolute;
+        top: 100px;
+        left: 5%;
+        right: 5%;
+        height: 620px;
+        width: 90%;
+        background-color: whitesmoke;
+        border: none;
+        resize: none;
+        outline: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #0A3871;
+    }
+    .textarea::placeholder{
+        color: #0A3871;
+    }
+    .div-texto-boton-copiar{
+        display: none;
+    }
+    .mostrar-mensaje{
+        display: none;
+    }
+    
+    section{
+        position: absolute;
+        top: 920px;
+        left: 5%;
+        right: 5%;
+        margin: 0;
+        height: 650px;
+        width: 90%;
+        background-color: white;
+        border-radius: 24px;
+        border-radius: 24px;
+        border-top: 2px solid;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-bottom: 2px solid;
+        border-color: #0A3871;
+    }
+    #munieco{
+        position: relative;
+        top: 80px;
+        background-color: white;
+        width: 100%;
+        height: 350px;
+    }
+    #texto-error{
+        color:#343A40;
+        position: relative;
+        top: 80px;
+        text-align: center;
+        font-size: 28px;
+        margin: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #p-error{
+        color: #495057;
+        position: relative;
+        top: 70px;
+        text-align: center;
+        font-size: 17px;
+    
+    }
+    .mensaje{
+        position: absolute;
+        top: 750px;
+        left: 5%;
+        height: 18px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .botones{
+        height: 45px;
+        width: 42%;
+        background-color: #0c8cd3;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+        color: white;
+        border-radius: 24px;
+        border: 0;
+        border-bottom: 3px solid;
+        border-color: #04324c; 
+    }
+    .botones:hover{
+        background-color: orange;
+    }
+    #boton-uno{
+        position: absolute;
+        top: 780px;
+        left: 5%;
+    }
+    #boton-dos{
+        position: absolute;
+        top: 780px;
+        left: 55%;
+    }
+    
+    #bto-copiar{
+        display: none;
+    }
+    .div-nuevo{
+        position: absolute;
+        left: 100px;
+        background-color: red;
+        height: 500px; 
+        width: 1000px
+    }
+    .div-texto-boton-copia-nuevo{
+        position: absolute;
+        top: 920px;
+        left: 5%;
+        right: 5%;
+        margin: 0;
+        height: 650px;
+        width: 90%;
+        background-color: white;
+        border-radius: 24px;
+        border-radius: 24px;
+        border-top: 2px solid;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-bottom: 2px solid;
+        border-color: #0A3871;
+    }
+    
+    .poner-invisible-div{
+        display: none;
+    }
+    
+    .textarea-nuevo{
+        position: relative;
+        top: 60px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        height: 500px;
+        background-color: white;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #0A3871;
+        margin: auto;
+        border: none;
+        resize: none;
+        outline: none;
+    }
+    
+    .boton-copiar-nuevo{
+        position: relative;
+        top: 90px;
+        height: 46px;
+        left: 4%;
+        right: 4%;
+        width: 90%;
+        background-color: white;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+        color: #0c8cd3;
+        border-radius: 24px;
+        border-top: 2px solid;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-bottom: 2px solid;
+        border-color: #0c8cdc;
+    }
+    .boton-copiar-nuevo:hover{
+        background-color: orange;
+        border-color: white;
+        color: white;
+    }
+    footer{
+        position: absolute;
+        top: 1600px;
+        /*bottom: 0px;*/
+        width: 100%;
+        height: 80px;
+        background-color: #0A3871;
+        color: white;
+    }
+    footer > h3{
+        position: absolute;
+        bottom: 5px;
+        left: 23%;
+        text-align: center;
+    }
+    .logo-git{
+        position: absolute;
+        bottom: 10px;
+        left: 7%;
+        margin: 0;
+        width: 48px;
+        height: 50px;
+        background-color: #0A3871;
+    }
+}

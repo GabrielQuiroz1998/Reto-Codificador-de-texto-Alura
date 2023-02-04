@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Proyecto-Gabriel Quiroz</title>
+</head>
+<body>
+    <header>
+        <img src="img/Vector.png" alt="" class="vector">
+    </header>
+    <main>
+        <label for="input"></label>
+        <textarea name="input" id="input" class="textarea" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        <span class="mensaje">!solo letras en minuscula y sin acentos</span>
+        
+        <section>
+            <aside id="mensaje-error">
+                <img src="img/Muñeco.png" alt="" id="munieco">
+                <h2 id="texto-error">Ningún Mensaje fue Encontrado</h2>
+                <p id="p-error">Ingrese el texto que desees encriptar o desencriptar.</p>
+                <label for="bto-copiar"></label>
+                <button id="bto-copiar" class="botones">Copiar</button>
+            </aside>
+        </section>
+        
+        <aside id="mostrar-texto" class="div-texto-boton-copiar">
+            <label for="output"></label>
+            <textarea name="output" id="output" class="mostrar-mensaje" cols="30" rows="10"></textarea>
+            <label for="boton-copiar"></label>
+            <button id="boton-copiar" name="boton-copiar">COPIAR</button>
+        </aside>
+        
+        <label for="boton-uno"></label>
+        <button id="boton-uno" class="botones">ENCRIPTAR</button>
+        <label for="boton-dos"></label>
+        <button id="boton-dos" class="botones">DESENCRIPTAR</button>
+    </main>
+
+    <footer>
+        <h3>Gabriel Quiroz - Alura Latam</h3>
+        <img src="img/git-for-windows.ico" alt="" class="logo-git">
+    </footer>
+    <!---- mejorar el footer -->
+
+    <script src="js/index.js"></script>
+    <script src="js/encriptadorterminado.js"></script>
+    <script src="js/desencriptador.js"></script>
+</body>
+</html>
